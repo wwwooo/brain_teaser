@@ -3,65 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>5x5</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <table id="game">
-        <tr>
+    <table id="brain_teaser" class="wrap">
+        <tr class="brain_teaser__row">
+        <!--th+th.brain_teaser__arrow[cell=$]{&#9660;}*5-->
             <th></th>
-            <th>&#9660;</th>
-            <th>&#9660;</th>
-            <th>&#9660;</th>
-            <th>&#9660;</th>
-            <th>&#9660;</th>
+            <th class="brain_teaser__arrow" cell="1">&#9660;</th>
+            <th class="brain_teaser__arrow" cell="2">&#9660;</th>
+            <th class="brain_teaser__arrow" cell="3">&#9660;</th>
+            <th class="brain_teaser__arrow" cell="4">&#9660;</th>
+            <th class="brain_teaser__arrow" cell="5">&#9660;</th>
         </tr>
-        <tr>
-            <th>&#9654;</th>
-            <td>
-                <table>
-                    <tr>
-                        <th>-</th>
-                    </tr>
-                </table>
-            </td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>+</td>
+        <!--tr.brain_teaser__row*5>(th.brain_teaser__arrow{&#9654;}+td[value='-' cell=$]*5)-->
+        <tr class="brain_teaser__row">
+            <th class="brain_teaser__arrow">&#9654;</th>
+            <td value="-" cell="1"></td>
+            <td value="-" cell="2"></td>
+            <td value="-" cell="3"></td>
+            <td value="-" cell="4"></td>
+            <td value="+" cell="5"></td>
         </tr>
-        <tr>
-            <th>&#9654;</th>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+        <tr class="brain_teaser__row">
+            <th class="brain_teaser__arrow">&#9654;</th>
+            <td value="-" cell="1"></td>
+            <td value="-" cell="2"></td>
+            <td value="-" cell="3"></td>
+            <td value="-" cell="4"></td>
+            <td value="-" cell="5"></td>
         </tr>
-        <tr>
-            <th>&#9654;</th>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+        <tr class="brain_teaser__row">
+            <th class="brain_teaser__arrow">&#9654;</th>
+            <td value="-" cell="1"></td>
+            <td value="-" cell="2"></td>
+            <td value="-" cell="3"></td>
+            <td value="-" cell="4"></td>
+            <td value="-" cell="5"></td>
         </tr>
-        <tr>
-            <th>&#9654;</th>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+        <tr class="brain_teaser__row">
+            <th class="brain_teaser__arrow">&#9654;</th>
+            <td value="-" cell="1"></td>
+            <td value="-" cell="2"></td>
+            <td value="-" cell="3"></td>
+            <td value="-" cell="4"></td>
+            <td value="-" cell="5"></td>
         </tr>
-        <tr>
-            <th>&#9654;</th>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+        <tr class="brain_teaser__row">
+            <th class="brain_teaser__arrow">&#9654;</th>
+            <td value="-" cell="1"></td>
+            <td value="-" cell="2"></td>
+            <td value="-" cell="3"></td>
+            <td value="-" cell="4"></td>
+            <td value="-" cell="5"></td>
         </tr>
     </table>
 </body>
